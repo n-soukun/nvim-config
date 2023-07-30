@@ -14,8 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
-	--
-	-- この下にインストールするプラグインを記載します。
+	use {'neoclide/coc.nvim', branch = 'release'}
 	use("folke/tokyonight.nvim")
 	use({
 		"nvim-lualine/lualine.nvim",
@@ -32,7 +31,7 @@ return require("packer").startup(function(use)
 		"folke/noice.nvim",
 		config = function()
 			require("noice").setup({
-				-- add any options here
+			-- add any options here
 			})
 		end,
 		requires = {
