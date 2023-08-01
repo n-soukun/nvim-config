@@ -3,7 +3,7 @@ require("keymaps")
 require("autocmds")
 require("options")
 
-vim.cmd([[colorscheme tokyonight-night]])
+vim.cmd([[colorscheme everforest]])
 require("lualine").setup()
 require("mini.indentscope").setup({
 	symbol = "|",
