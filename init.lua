@@ -6,7 +6,7 @@ require("options")
 vim.cmd([[colorscheme everforest]])
 require("lualine").setup()
 require("mini.indentscope").setup({
-	symbol = "|",
+	symbol = "▏",
 })
 require("nvim-treesitter.configs").setup({
 	auto_install = true,
